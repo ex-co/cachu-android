@@ -1,9 +1,10 @@
-package com.ex.cachu
+package com.ex.cachu.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.ex.cachu.R
 
 class SplashActivity : AppCompatActivity() {
     private val SPLASH_TIME_OUT:Long=3000 // 3 sec
@@ -13,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
 
 
         Handler().postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }, SPLASH_TIME_OUT)
     }
