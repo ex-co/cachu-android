@@ -1,6 +1,9 @@
 <resources>
+
     <string name="app_name">cachu</string>
+
     <string name="kakao_app_key">104edd4c934733f482b579efe8438689</string>
+
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
