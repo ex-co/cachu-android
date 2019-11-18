@@ -16,11 +16,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.home.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.TransparentTheme"></activity>
+            android:label="@string/title_activity_home"></activity>
         <activity
-            android:name=".ui.SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
