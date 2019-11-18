@@ -1,12 +1,11 @@
 package com.ex.cachu.login
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.ex.cachu.R
-import com.ex.cachu.ui.HomeActivity
+import com.ex.cachu.ui.home.HomeActivity
 import com.kakao.auth.ISessionCallback
 import com.kakao.auth.Session
 import com.kakao.network.ErrorResult
