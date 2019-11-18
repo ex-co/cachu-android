@@ -70,7 +70,6 @@ class HomeActivity : AppCompatActivity() {
                 .into(imageView)
         }
 
-
         supportFragmentManager.beginTransaction().replace(R.id.content_details, homeFragment).commit()
     }
 }
