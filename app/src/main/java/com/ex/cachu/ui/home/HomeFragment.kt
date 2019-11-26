@@ -34,7 +34,10 @@ class HomeFragment : Fragment() {
             val secondPagerAdapter = PreviewImageAdapter(mContext, secondModels)
 
             firstViewPager.adapter = firstPagerAdapter
+            firstViewPager.clipToPadding = false
+
             secondViewPager.adapter = secondPagerAdapter
+            secondViewPager.clipToPadding = false
         }
 
         return root

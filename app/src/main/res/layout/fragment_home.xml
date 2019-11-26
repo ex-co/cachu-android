@@ -39,7 +39,8 @@
                 android:id="@+id/first_pager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/first_content_title" />
+                android:layout_below="@id/first_content_title"
+                android:paddingEnd="@dimen/preview_pager_padding_side"/>
 
             <TextView
                 android:id="@+id/second_content_title"
@@ -55,7 +56,8 @@
                 android:id="@+id/second_pager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/second_content_title"/>
+                android:layout_below="@id/second_content_title"
+                android:paddingEnd="@dimen/preview_pager_padding_side"/>
 
             <TextView
                 android:id="@+id/third_content_title"
