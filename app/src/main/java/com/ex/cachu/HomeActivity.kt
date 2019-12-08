@@ -1,17 +1,14 @@
-package com.ex.cachu.ui.home
+package com.ex.cachu
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.ex.cachu.R
 import com.ex.cachu.ui.dashboard.DashboardFragment
+import com.ex.cachu.ui.home.HomeFragment
 import com.ex.cachu.ui.mypage.MyPageFragment
 import com.ex.cachu.ui.query.QueryFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView

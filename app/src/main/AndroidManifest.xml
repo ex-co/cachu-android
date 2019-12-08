@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.home.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"></activity>
         <activity
             android:name=".ui.SplashActivity">
@@ -26,7 +26,6 @@
         </activity>
 
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
