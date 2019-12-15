@@ -10,22 +10,25 @@ import com.bumptech.glide.request.RequestOptions
 import com.ex.cachu.ui.dashboard.DashboardFragment
 import com.ex.cachu.ui.home.HomeFragment
 import com.ex.cachu.ui.mypage.MyPageFragment
+import com.ex.cachu.ui.query.MapQueryFragment
+import com.ex.cachu.ui.query.PictureQueryFragment
 import com.ex.cachu.ui.query.QueryFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), QueryFragment.OnHeadlineSelectedListener {
+
+    val homeFragment = HomeFragment()
+    val dashboardFragment = DashboardFragment()
+    val myPageFragment = MyPageFragment()
+    val queryFragment = QueryFragment()
+    val mapQueryFragment = MapQueryFragment()
+    val pictureQueryFragment = PictureQueryFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("Home", "onCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
-
-        //init
-        val homeFragment = HomeFragment()
-        val dashboardFragment = DashboardFragment()
-        val myPageFragment = MyPageFragment()
-        val queryFragment = QueryFragment()
 
         navView.setOnNavigationItemSelectedListener {
             item ->
@@ -67,7 +70,17 @@ class HomeActivity : AppCompatActivity() {
                 .into(imageView)
         }
 
-
         supportFragmentManager.beginTransaction().replace(R.id.content_details, homeFragment).commit()
+    }
+
+    override fun onQuerySelected(option: Int){
+
+        Log.d("HomeActivity", "onQuerySelected called")
+        if(option == 1){
+            supportFragmentManager.beginTransaction().replace(R.id.content_details, pictureQueryFragment).commit()
+        }
+        else if(option == 2){
+            supportFragmentManager.beginTransaction().replace(R.id.content_details, mapQueryFragment).commit()
+        }
     }
 }
